@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>종교 선택 페이지</title>
+    <link rel="stylesheet" href="/status/body.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            width: 400px;
+            margin: 0 auto;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+            text-align: center;
+        }
+
+        .rel_select {
+            margin: 0 0 20px;
+        }
+
+        .religion button {
+            width: 150px;
+            height: 150px;
+            margin: 15px 10px;
+            border-radius: 30px;
+            border: 2px solid transparent;
+            box-shadow: 3px 3px 15px 3px rgb(0,0,0,0.3);
+        }
+
+        .xbtn {
+            position: relative;
+        }
+
+        #btn11 {
+            position: absolute;
+            top: -15px;
+            left: 0;
+            border: none;
+            font-size: 25px;
+            background-color: transparent;
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        #btn22 {
+            position: absolute;
+            top: -15px;
+            right: 0;
+            border: none;
+            font-size: 20px;
+            background-color: transparent;
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .btmbanner {
+            width: 390px;
+        }
+
+        .botnext {
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+            border-radius: 30px;
+            margin-top: 20px;
+            color: antiquewhite;
+            border: none;
+            background-color: #fb6f92;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: pink;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="xbtn">
+        <button type="button" id="btn11">
+            < </button>
+                <button type="button" id="btn22">X</button>
+    </div>
+
+    <body id="body">
+        <div class="religion_tap">
+            <h3>종교 선택</h3>
+        </div>
+
+        <div class="rel_select">
+            <label>종교를 알려주세요</label>
+        </div>
+
+        <div class="religion">
+            <button type="button">무교</button>
+            <button type="button">기독교</button>
+            <button type="button">천주교</button>
+            <button type="button">불교</button>
+        </div>
+    </body>
+    <div class="btmbanner">
+        <button class="botnext"> 다음으로 </button>
+    </div>
+
+    <script>
+        var religion = document.querySelector(".religion");
+            
+        var button = null;
+        
+        religion.onclick=function(e){
+            
+            if(button !== null){
+                
+                button.style.borderColor="";
+            
+            }
+
+            e.target.style.borderColor="#ff8fab";
+
+            button = e.target;
+        }
+    </script>
+    <script src="/status/top_button.js"></script>
+
+
+</body>
+
+</html>

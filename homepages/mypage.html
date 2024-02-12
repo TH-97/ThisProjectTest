@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        *{margin: 0; padding: 0;}
+        body{
+            background-color: rgb(247, 243, 245);
+        }
+        #body{
+            width: 420px;
+            height: 100vh;
+            margin: 0 auto;
+            border-radius: 10px;
+            
+
+            font-family: "Noto Sans KR", sans-serif;
+        }
+        .top{
+            margin: 24px 24px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .top img{
+            width: 70px;            
+        }
+    </style>
+    <link rel="stylesheet" href="header.css">
+
+</head>
+<body>
+
+    <div id="body">
+        <header>
+            <div class="header-top">
+                <img class="icon" src="img/macicon.png">
+                <p class="iconText">taehunpick</p>
+                <img class="ins-icon" src="img/ins-icon.jpeg" alt="">
+            </div>
+
+            <div id="btns">
+                <a href="home.html"><button type="button">홈</button></a>
+                <a href="matching.html"><button type="button">매칭</button></a>
+                <a href="meeting.html"><button type="button">소모임</button></a>
+                <a href="mypage.html"><button type="button">내정보</button></a>
+            </div>
+        </header>
+
+        <div class="top">
+            <div><img src="img/img-animal-cat.png"></div>
+            <div><h1>나의 이름</h1> <p>나의 아이디</p></div>
+        </div>
+
+        <style>
+            .mid{
+                margin: 24px 24px;
+            }
+            .mid .mid-box{
+                margin-top: 10px;
+                padding: 10px 20px;
+                box-shadow: 0 4px 8px rgb(0,0,0,0.15);
+                border-radius: 10px;
+            }
+            .mid .mid-box .mid-box-item{
+                margin: 25px 0px 25px 0px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .hid{
+                height: 2rem;
+                border-bottom: 1px solid #99999999;
+            }
+            .bot{
+                margin: 24px 24px;
+            }
+            .bot .bot-box{
+                display: flex;
+                box-shadow: 0 4px 8px rgb(0,0,0,0.15);
+                border-radius: 10px;
+                align-items: center;
+                padding: 10px 10px;
+            }
+            .bot img{
+                width: 30px;
+            }
+
+        </style>
+        <div class="mid">
+            <p>소개팅</p>
+            <div class="mid-box">
+                <div class="mid-box-item">소개팅 카드 수정 <p>></p></div>
+                <a href="/status/mainpage_mycard.html/00mycardchange.html"><div class="mid-box-item">소개팅 자기소개 수정 <p>></p></div></a>
+                <div class="mid-box-item">이상형 조건 수정 <p>></p></div>
+            </div>
+            <div class="hid"></div>
+        </div>
+        <div class="bot">
+            <p>내이름의 보유픽</p>
+            <div class="bot-box">
+                <div><img src="img/img-pick-400.png" alt=""></div>
+                <div><p> 0픽</p></div>
+                <div style="margin-left: 280px;"><p> > </p></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

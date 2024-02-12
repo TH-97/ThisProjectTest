@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>거주지역 선택 페이지</title>
+
+    <link rel="stylesheet" href="/status/body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { width: 400px; margin: 0 auto; font-family: "Noto Sans KR", sans-serif; position: relative; text-align: center;}
+        
+        .living_select {margin: 0 0 20px ;}
+        .job_description {margin-top: 20px; display: none;}
+        .xbtn {
+            position: relative;
+        }
+
+        #btn11 {
+            position: absolute;
+            top: -15px;
+            left: 0;
+            border: none;
+            font-size: 25px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        #btn22 {
+            position: absolute;
+            top: -15px;
+            right: 0;
+            border: none;
+            font-size: 20px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .btmbanner {
+            width: 390px;
+        }
+
+        .botnext {
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+            border-radius: 30px;
+            margin-top: 20px;
+            color: antiquewhite;
+            border: none;
+            background-color: #fb6f92;
+            cursor: pointer;
+        }
+        h2 {color: pink;}
+        p {line-height: 1.5;}
+    </style>
+</head>
+<body>
+    <div class="xbtn">
+        <button type="button" id="btn11">< </button>
+        <button type="button" id="btn22">X</button>
+      </div>
+    <body id="body" style="border: none;">
+        <div class="living_tap">
+            <h3>거주지역 선택</h3>
+        </div>
+
+        <div class="living_select">
+            <label>거주지역을 알려주세요</label>
+        </div>
+            
+        <div id="mapContainer">
+            <!-- 카카오맵 API -->
+            <p>카카오맵 API</p>
+        </div>
+
+
+    </body>
+    <div class="btmbanner">
+        <button class="botnext"> 다음으로 </button>
+    </div>
+    <script src="/status/top_button.js"></script>
+</body>
+</html>

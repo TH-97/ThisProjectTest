@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/status/body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        *{margin: 0; padding: 0;}
+        .xbtn {
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        #btn11 {
+            position: absolute;
+            top: -15px;
+            left: 0;
+            border: none;
+            font-size: 25px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        #btn22 {
+            position: absolute;
+            top: -15px;
+            right: 0;
+            border: none;
+            font-size: 20px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+
+        .imgbox{
+            position: relative;
+            text-align: center;
+        }
+        .stair{
+            width: 320px;
+            height: 200px;
+            margin-top: 50px;
+        }
+        .stand{
+            border: 1px solid #000;
+            display: inline-block;
+            width: 55px;
+            height: 150px;
+            text-align: center;
+            margin: 0;
+        }
+        .person{
+            width: 40px;
+            height: 50px;
+            position: absolute;
+            opacity: 0;
+
+        }
+        .opt{
+            border-radius: 30px;
+            margin: 18px;
+            width: flex;
+            height: 30px;
+            text-align: center;
+            box-shadow: 3px 3px 15px 3px rgb(0,0,0,0.3);
+        }
+        p{
+            color: #fb6f92;
+        }
+
+
+        .btmbanner {
+            width: 390px;
+        }
+
+        .botnext {
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+            border-radius: 30px;
+            margin-top: 20px;
+            color: antiquewhite;
+            border: none;
+            background-color: #fb6f92;
+            cursor: pointer;
+        }
+        div{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <body id="body">
+        <div class="xbtn">
+            <button type="button" id="btn11"><</button>
+            <button type="button" id="btn22">X</button>
+        </div>
+    
+        <div>
+            <h3>연애횟수</h3>
+        </div>
+    
+        <div>
+            <div class="imgbox">
+                <img class="stair" src="/status/img/stairs icon isolated on abstract_5090231.png" alt="">
+            
+                <img class="person" src="/status/img/person-simple_9843655.png" alt="" style="left: 85px; bottom: 80px;">
+                <img class="person" src="/status/img/person-simple_9843655.png" alt="" style="left: 145px; bottom: 105px;">
+                <img class="person" src="/status/img/person-simple_9843655.png" alt="" style="left: 200px; bottom: 129px;">
+                <img class="person" src="/status/img/person-simple_9843655.png" alt="" style="left: 260px; bottom: 152px;">
+            </div>
+                         
+            
+            <div class="optbox">
+                <div class="opt" id="btn1">
+                    <p>모쏠</p>
+                </div>
+                <div class="opt" id="btn2">
+                    <p>1~2회</p>
+                </div>
+                <div class="opt" id="btn3">
+                    <p>3~6회</p>
+                </div>
+                <div class="opt" id="btn4">
+                    <p>7회 이상</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="btmbanner">
+            <button class="botnext"> 수정하기 </button>
+        </div>
+    </body>
+    
+    <script>
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+
+        var person = document.querySelectorAll(".person");
+
+        var imgbox = document.querySelector(".imgbox");
+
+        btn1.onclick = function(){
+            person[0].style.opacity = 1;
+            person[1].style.opacity = 0;
+            person[2].style.opacity = 0;
+            person[3].style.opacity = 0;
+
+            btn1.style.border="2px solid #ff8fab"
+            btn2.style.border="none"
+            btn3.style.border="none"
+            btn4.style.border="none"
+
+        }
+        btn2.onclick = function(){
+            person[0].style.opacity = 0;
+            person[1].style.opacity = 1;
+            person[2].style.opacity = 0;
+            person[3].style.opacity = 0; 
+
+            btn1.style.border="none"
+            btn2.style.border="2px solid #ff8fab"
+            btn3.style.border="none"
+            btn4.style.border="none"
+
+        }
+        btn3.onclick = function(){
+            person[0].style.opacity = 0;
+            person[1].style.opacity = 0;
+            person[2].style.opacity = 1;
+            person[3].style.opacity = 0;  
+
+            btn1.style.border="none"
+            btn2.style.border="none"
+            btn3.style.border="2px solid #ff8fab"
+            btn4.style.border="none"
+        }
+        btn4.onclick = function(){
+            person[0].style.opacity = 0;
+            person[1].style.opacity = 0;
+            person[2].style.opacity = 0;
+            person[3].style.opacity = 1;   
+
+            btn1.style.border="none"
+            btn2.style.border="none"
+            btn3.style.border="none"
+            btn4.style.border="2px solid #ff8fab"
+        }
+
+    </script>
+    <script src="/status/top_button.js"></script>
+    
+</body>
+</html>

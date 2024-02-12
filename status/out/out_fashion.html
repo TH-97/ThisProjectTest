@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/status/body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+                
+        .xbtn {
+            position: relative;
+        }
+
+        #btn11 {
+            position: absolute;
+            top: -15px;
+            left: 0;
+            border: none;
+            font-size: 25px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        #btn22 {
+            position: absolute;
+            top: -15px;
+            right: 0;
+            border: none;
+            font-size: 20px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .btmbanner {
+            width: 390px;
+        }
+
+        .botnext {
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+            border-radius: 30px;
+            margin-top: 20px;
+            color: antiquewhite;
+            border: none;
+            background-color: #fb6f92;
+            cursor: pointer;
+        }
+
+        #body{
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
+        .box{
+            text-align: center;
+        }
+
+        .box > div{
+            display: inline-block;
+        }
+        
+        .box > div button{
+            margin: 15px 10px;
+            width: 150px;
+            height: 150px;
+            border-radius: 30px;
+            box-shadow: 3px 3px 15px 3px rgb(0, 0, 0, 0.3);
+            border: 2px solid transparent;
+        }
+
+        section > div button img{
+            width: 100%;
+            border-radius: 30px;
+            margin-top: 5px;
+        }
+
+        .box > div .active{
+            border: 2px solid #ff8fab;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="xbtn">
+        <button type="button" id="btn11"><</button>
+        <button type="button" id="btn22">X</button>
+    </div>
+    <body id="body">
+        <div>
+            <header>
+                <h3 style="margin-bottom: 30px">패션스타일을 알려주세요</h3>
+            </header>
+
+            <section>
+                <div>
+                    <div class="box"> 
+                        <div>
+                            <button type="button">
+                            <img src="/status/img/img-fashion-male-casual.png" alt="A">
+                            <p>캐주얼</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button">
+                            <img src="/status/img/img-fashion-male-dandy.png" alt="A">
+                            <p>댄디</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button">
+                            <img src="/status/img/img-fashion-male-street.png" alt="A">
+                            <p>스트릿</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button">
+                            <img src="/status/img/img-fashion-male-american.png" alt="A">
+                            <p>아메카지</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="btmbanner">
+                <button class="botnext"> 수정하기 </button>
+            </div>
+
+            <script>
+                var box = document.querySelector(".box");
+                    var btn = box.querySelectorAll("button");
+
+                    box.addEventListener("click", function(){       
+
+                        for(var i = 0; i < btn.length; i++){
+                    
+                            if(event.target.parentNode == btn[i]){
+                                btn[i].classList.toggle("active");
+
+                            } else{
+                                btn[i].classList.remove("active");
+                            }
+                        }
+                        
+                    });
+            </script>
+            <script src="/status/top_button.js"></script>
+
+        </div>
+    </body>
+</body>
+</html>

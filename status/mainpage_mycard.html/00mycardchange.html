@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/body.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/font.css">
+
+  <style>
+    ul,
+    li {
+      list-style: none;
+    }
+
+    #body {
+      width: 400px;
+      margin: 0 auto;
+      overflow: auto;
+      border: none;
+    }
+
+    .profile_tap {
+      padding: 0 0 0 40px;
+    }
+
+    .profile_list {
+      overflow: hidden;
+    }
+
+    .profile_list>li {
+      float: left;
+      width: 40%;
+      margin: 10px;
+    }
+
+    .profile_list>li>a {
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      align-items: center;
+      border: 1px solid pink;
+      background-color: #ff8fab;
+      color: black;
+      border-radius: 30px;
+      padding: 10px;
+    }
+
+    .xbtn {
+      position: relative;
+    }
+
+    #btn11 {
+      position: absolute;
+      top: -15px;
+      left: 0;
+      border: none;
+      font-size: 25px;
+      background-color: transparent;
+      color: #cec7c7;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    #btn22 {
+      position: absolute;
+      top: -15px;
+      right: 0;
+      border: none;
+      font-size: 20px;
+      background-color: transparent;
+      color: #cec7c7;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body >
+
+  <body id="body" >
+    <div class="xbtn">
+      <button type="button" id="btn11">
+        < </button>
+          <button type="button" id="btn22">X</button>
+    </div>
+
+
+    <section>
+      <div class="profile_tap">
+        <h3>기본프로필</h3>
+
+      </div>
+      <div>
+        <hr>
+        <ul class="profile_list">
+
+          <li><a href="/status/basic/basic_face.html">프로필</a></li>
+          <li><a href="/status/basic/basic_career.html">직업</a></li>
+          <li><a href="/status/basic/basic_living.html">거주지역</a></li>
+          <li><a href="/status/basic/basic_religion.html">종교</a></li>
+          <li><a href="/status/basic/basic_military.html">군대</a></li>
+          <li><a href="/status/basic/basic_smoking.html">흡연</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="profile_tap">
+        <h3>외적정보</h3>
+      </div>
+      <div>
+        <hr>
+        <ul class="profile_list">
+          <li><a href="/status/out/out_point.html">포인트</a></li>
+          <li><a href="/status/out/out_fashion.html">패션스타일</a></li>
+          <li><a href="/status/out/out_tall.html">키</a></li>
+          <li><a href="/status/out/out_body.html">체형</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="profile_tap">
+        <h3>내적정보</h3>
+      </div>
+      <div>
+        <hr>
+        <ul class="profile_list">
+          <li><a href="/status/my_card_inner/inner_mbti.html">MBTI</a></li>
+          <li><a href="/status/my_card_inner/inner_like.html">관심사</a></li>
+          <li><a href="/status/my_card_inner/inner_datelike.html">데이트유형</a></li>
+          <li><a href="/status/my_card_inner/inner_datetime.html">데이트빈도</a></li>
+          <li><a href="/status/my_card_inner/inner_datehad.html">연애횟수</a></li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</body>
+<script src="/status/top_button.js"></script>
+</body>
+
+</html>

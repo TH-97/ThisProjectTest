@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #body {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 909px;
+            font-family: "Noto Sans KR", sans-serif;
+            box-shadow: 3px 3px 15px 3px rgb(0, 0, 0, 0.3);
+            background-color: rgb(247, 243, 245);
+
+        }
+
+        #body .whole_part {
+
+            width: 418.19px;
+            height: 640px;
+
+
+
+            box-shadow: 3px 3px 15px 3px rgb(0, 0, 0, 0.3);
+        }
+
+        #dont {
+            height: 40px;
+            border: 1px solid black;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            
+            font-size: 20px;
+           padding-right: 21.3px ;
+            
+      
+        }
+        #dont .history_back{
+            border: none;
+            float: left;
+            display: flex;
+            align-items: center;
+        height: -3px;
+        }
+        #dont .p_class{
+            font-size: 28px;
+            text-align: center;
+        }
+        #dont .history_back::before {
+            content: '\276E'; 
+            font-size: 30.21px;
+            text-align: center;
+         
+            
+        
+        }
+
+        #body .whole_part .main_mother {
+            display: flex;
+            height: 152px;
+
+            padding: 14px;
+            flex-direction: row;
+            margin: 36px 24px;
+            box-shadow: 3px 3px 15px 3px rgb(0, 0, 0, 0.3);
+            border-radius: 30px;
+        }
+
+        #body .whole_part .main_mother .main_son {
+            width: 100px;
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        #body .whole_part .main_mother .main_daughter {
+            width: 130px;
+            margin-left: 22px;
+
+
+        }
+
+        #body .whole_part .main_mother .main_daughter .main_daughter_son,
+        .main_daughter_person {
+            height: 32px;
+
+            font-size: 18px;
+        }
+
+        #body .whole_part .main_mother .main_daughter .main_bos2 .main_employee {
+            margin-top: 16px
+        }
+
+        #body .whole_part .main_mother .main_daughter .main_bos2 .main_employee,
+        .main_student,
+        .main_teacher {
+            height: 20px;
+
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .main_daughter_bos::before,
+        .footer_daughter_bos::before {
+            content: '\1F43B';
+            font-size: 60px;
+
+
+        }
+
+        .main_daughter_bos,
+        .footer_daughter_bos {
+            height: 100px;
+            width: 100px;
+            margin: 12px 0;
+            border: 1px solid black;
+            border-radius: 50%;
+           
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .main_son1 {
+            width: 100px;
+          display: flex;
+          justify-content: center;
+            align-items: center;
+
+            float: right;
+
+        }
+      
+
+        .whole_part .footer_dog {
+            margin: 0 24px;
+            border-radius: 30px;
+            height: 232px;
+
+        }
+
+        #body .whole_part .footer_cat {
+            height: 54px;
+
+            text-align: center;
+        }
+
+        .footer_cat .p,
+        .pword {
+            height: 26px;
+
+        }
+
+        .footer_ant {
+            height: 25px;
+            text-align: center;
+            margin-bottom: 28px;
+
+
+
+
+        }
+
+        .footer_person {
+            height: 149px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #btn1 {
+            text-decoration: underline;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="body">
+
+        <div class="whole_part">
+            
+            <section id="dont">
+                <p class="p_class"><button onclick="back()" class="history_back"></button>소개팅</p>
+
+                <script>
+                    function back(){
+                        window.history.back();
+                        console.log(1);
+                    }
+                </script>
+                
+
+            </section>
+
+
+            <main>
+                <div class="main_mother">
+                    <div class="main_son">
+                        <article class="main_daughter_bos"></article>
+                    </div>
+                    <div class="main_daughter">
+                        <div class="main_daughter_son">대학교 or 직장</div>
+                        <div class="main_daughter_person">직업, 나이
+
+                        </div>
+                        <div class="main_bos2">
+                            <div class="main_employee">지역</div>
+                            <div class="main_student">특징</div>
+
+                            <div class="main_teacher">취미</div>
+                        </div>
+
+                    </div>
+                    <div class="main_son1">
+
+                    </div>
+                    </div>
+
+
+
+            </main>
+            <footer>
+                <div class="footer_dog">
+                    <div class="footer_cat">
+                        <p class="p">어떤분과 매칭을 진행하시겠어요?</p>
+                        <p class="pword">*하루에 한명만 매칭할 수 있어요.</p>
+                    </div>
+                    <div class="footer_person">
+                        <article class="footer_daughter_bos"></article>
+                    </div>
+                    <div class="footer_ant"><button type="button" id="btn1" html="#">매칭 안할래요</button></div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+</html>

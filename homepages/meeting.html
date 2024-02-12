@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(247, 243, 245);
+        }
+        #body{
+            width: 420px;
+            height: 100vh;
+            margin: 0 auto;
+            background-color: white;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
+        section .top{
+            box-shadow: 0 4px 8px rgb(0,0,0,0.15);
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin: 24px 24px;
+            text-align: center;
+
+            
+        }
+        section .top .top-text{
+            
+        }
+
+        section .mid{
+            box-shadow: 0 4px 8px rgb(0,0,0,0.15);
+            border-radius: 10px;
+            margin: 24px 24px;
+            
+            display: flex;
+            flex-direction: column;
+            background-color: #ffc2d1;
+        }
+        section .mid .mid-box{
+            display: flex;
+            justify-content: space-around;
+            padding: 30px 30px;
+        }
+        section .mid .mid-box button{
+            font-size: 12px;
+            padding: 60px 40px;
+            border-radius: 20px;
+            border: none;
+            background-color: white;
+            box-shadow: 0 4px 8px rgb(0,0,0,0.15);
+        }
+        section .mid .mid-box2{
+            margin: 0 auto;
+
+        
+        }
+        section .mid button{
+            font-size: 15px;
+            border-radius: 20px;
+            border: none;
+            margin: 10px 0 20px 0;
+            padding: 10px 80px;
+            box-shadow: 0 4px 8px rgb(0,0,0,0.15);
+            background-color: #fb6f92;
+            
+        }
+    </style>
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+    <div id="body">
+        <header>
+            <div class="header-top">
+                <img class="icon" src="img/macicon.png">
+                <p class="iconText">taehunpick</p>
+                <img class="ins-icon" src="img/ins-icon.jpeg" alt="">
+            </div>
+
+            <div id="btns">
+                <a href="home.html"><button type="button">홈</button></a>
+                <a href="matching.html"><button type="button">매칭</button></a>
+                <a href="meeting.html"><button type="button">소모임</button></a>
+                <a href="mypage.html"><button type="button">내정보</button></a>
+            </div>
+        </header>
+
+        <section>
+            <div class="top">
+                <p class="top-text">오늘의 매칭 키워드</p>
+            </div>
+            <div class="mid">
+                <div class="mid-box">
+                    <button type="button">랜텀 키워드</button>
+                    <button type="button">랜덤 키워드</button>
+                </div>
+                <div class="mid-box2">
+                <button type="button">입장</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

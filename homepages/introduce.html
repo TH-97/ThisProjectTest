@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .xbtn {
+            position: relative;
+            margin-bottom: 50px;
+
+
+        }
+
+        body {
+            background-color: rgb(247, 243, 245);
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
+        #body {
+            margin: 0 auto;
+            width: 420px;
+            box-shadow: 3px 3px 15px 3px rgb(0, 0, 0, 0.3);
+            background-color: white;
+            border-radius: 10px;
+            box-sizing: border-box;
+            overflow: scroll;
+            padding: 30px 15px 30px 15px;
+        }
+
+        #btn11 {
+            position: absolute;
+            top: -15px;
+            left: 0;
+            border: none;
+            font-size: 25px;
+            background-color: transparent;
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        #btn22 {
+            position: absolute;
+            top: -15px;
+            right: 0;
+            border: none;
+            font-size: 20px;
+            background-color: transparent;
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .collectbox {
+            overflow: hidden;
+        }
+
+        .optbox {
+            float: left;
+            display: flex;
+            flex-wrap: nowrap;
+            animation: bannermove 6s linear infinite;
+            overflow: hidden;
+            transform: rotateY(calc(var(--i) * 1deg)) translateZ(500px);
+        }
+
+        @keyframes bannermove {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(-20%, 0);
+
+            }
+        }
+
+        .opt {
+            background-color: #ff8fab;
+            border-radius: 10px;
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            overflow: hidden;
+            margin-right: 30px;
+        }
+
+        img {
+            margin-top: 3px;
+            width: 48px;
+            height: 48px;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 500;
+            color: white;
+            margin-top: 0;
+        }
+
+        .writebox {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .writedown {
+            box-shadow: 3px 3px 15px 3px rgb(0, 0, 0, 0.3);
+            border-radius: 30px;
+            width: 350px;
+            height: 300px;
+        }
+
+        .btmbanner {
+            width: 390px;
+        }
+
+        .botnext {
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+            border-radius: 30px;
+            margin-top: 20px;
+            color: antiquewhite;
+            border: none;
+            background-color: #fb6f92;
+            cursor: pointer;
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body id="body">
+        <div class="xbtn">
+            <button type="button" id="btn11">
+               < </button>
+                    <button type="button" id="btn22">X</button>
+        </div>
+
+        <h3>나를 소개해봐</h3>
+
+        <br>
+        <br>
+        <div class="collectbox">
+            <h3>소재</h3>
+            <br>
+            <br>
+            <br>
+
+            <div class="optbox">
+                <div class="opt">
+                    <img src="/img/introgot.png" alt="">
+                    <p>매력</p>
+                </div>
+                <div class="opt">
+                    <img src="/img/introphone.png" alt="">
+                    <p>연락스타일</p>
+                </div>
+                <div class="opt">
+                    <img src="/img/introlovemusic.png" alt="">
+                    <p>음악취향</p>
+                </div>
+                <div class="opt">
+                    <img src="/img/introhobby.png" alt="">
+                    <p>취미</p>
+                </div>
+                <div class="opt">
+                    <img src="/img/introfood.png" alt="">
+                    <p>음식취향</p>
+                </div>
+                <div class="opt">
+                    <img src="/img/introlifestyle.png" alt="">
+                    <p>라이프스타일</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="writebox">
+            <h3>자기소개를 입력해주세요</h3>
+            <input class="writedown" type="text"
+                placeholder="안농하세여 저는 어쩌구 좋아하고 저쩌구 활동을 주로 많이 하며 본인일에 열정적인 사람을 좋아하며 어떤 음식을 못먹고 좋아합니다 그리고 뽀로로 입니다">
+        </div>
+
+        <div class="btmbanner">
+            <button class="botnext"> 수정하기 </button>
+        </div>
+
+
+    </body>
+
+    <script src="introduce.js"></script>
+</body>
+
+</html>

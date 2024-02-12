@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/status/body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        *{margin: 0;padding: 0;}
+        .xbtn {
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        #btn11 {
+            position: absolute;
+            top: -15px;
+            left: 0;
+            border: none;
+            font-size: 25px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        #btn22 {
+            position: absolute;
+            top: -15px;
+            right: 0;
+            border: none;
+            font-size: 20px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .optoutbox{
+            text-align: center;
+            position: relative;
+        }
+        .optbox1
+        .optbox2
+        .optbox3
+        .optbox4{
+            width: 100%;
+            position: relative;
+        }
+
+        .opt{
+            border-radius: 30px;
+            padding: 15px 0px 0px 0px;
+            margin: 18px;
+            width: 100px;
+            height: 80px;
+            align-items: center;
+            display: inline-block;
+            box-shadow: 3px 3px 15px 3px rgb(0,0,0,0.3);
+            position: relative;
+            background-color: white;
+            
+        }
+        .opt.active{
+            border-radius: 30px;
+            padding: 15px 0px 0px 0px;
+            margin: 18px;
+            width: 100px;
+            height: 80px;
+            align-items: center;
+            display: inline-block;
+            box-shadow: 3px 3px 15px 3px rgb(0,0,0,0.3);
+            position: relative;
+            background-color: white;
+            border: 2px solid #000;
+        }
+
+        p{
+            margin-top: 22px;
+            color: #fb6f92;
+        }
+        .bar{
+            background-color: #fb6f92;
+            height: 20px;
+            width: 50px;
+            z-index: -1;
+            position: absolute;
+            margin-top: 58px;
+            margin-left: 169px;
+        }
+        .btmbanner {
+            width: 390px;
+        }
+
+        .botnext {
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+            border-radius: 30px;
+            margin-top: 20px;
+            color: antiquewhite;
+            border: none;
+            background-color: #fb6f92;
+            cursor: pointer;
+        }
+        div{
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <body id="body">
+        <div class="xbtn">
+            <button type="button" id="btn11"><</button>
+            <button type="button" id="btn22">X</button>
+        </div>
+    
+        <div>
+            <h3>MBTI</h3>
+        </div>
+    
+        <div class="bar"></div>
+        <div class="optoutbox">
+
+            <div class="optbox1">
+                <div class="opt" id="mbtie">
+                    <p>E</p>
+                </div>
+                <div class="opt" id="mbtii">
+                    <p>I</p>
+                </div>
+                <div class="bar"></div>
+            </div>
+  
+            <div class="optbox2">
+                <div class="opt" id="mbtin">
+                    <p>N</p>
+                </div>
+                <div class="opt" id="mbtis">
+                    <p>S</p>
+                </div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="optbox3">
+                <div class="opt" id="mbtif">
+                    <p>F</p>
+                </div>
+                <div class="opt" id="mbtit">
+                    <p>T</p>
+                </div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="optbox4">
+                <div class="opt" id="mbtip">
+                    <p>P</p>
+                </div>
+                <div class="opt" id="mbtij">
+                    <p>J</p>
+                </div>
+            </div>
+    
+    
+        </div>
+
+        <div class="btmbanner">
+            <button class="botnext"> 수정하기 </button>
+        </div>
+    </body>
+
+    <script>
+        var optbox = document.querySelector(".optoutbox");
+
+        optbox.addEventListener("click",function(){
+        //   console.log(event.target);  
+          if(event.target.classList.contains("opt")){
+            var par = event.target.parentNode;
+            if(par.classList == "optbox1"){
+                var child = par.querySelectorAll(".opt");
+                for(var i = 0; i < child.length;i++){
+                    if(child[i].classList == event.target.classList){
+                        child[i].classList.add("active");
+                    } else{
+                        child[i].classList.remove("active");
+                    }
+                }
+            }
+            if(par.classList == "optbox2"){
+                var child = par.querySelectorAll(".opt");
+                for(var i = 0; i < child.length;i++){
+                    if(child[i].classList == event.target.classList){
+                        child[i].classList.add("active");
+                    } else{
+                        child[i].classList.remove("active");
+                    }
+                }
+            }
+            if(par.classList == "optbox3"){
+                var child = par.querySelectorAll(".opt");
+                for(var i = 0; i < child.length;i++){
+                    if(child[i].classList == event.target.classList){
+                        child[i].classList.add("active");
+                    } else{
+                        child[i].classList.remove("active");
+                    }
+                }
+            }
+            if(par.classList == "optbox4"){
+                var child = par.querySelectorAll(".opt");
+                for(var i = 0; i < child.length;i++){
+                    if(child[i].classList == event.target.classList){
+                     
+                        child[i].classList.add("active");
+                    } else{
+                        child[i].classList.remove("active");
+                    }
+                }
+            }   
+          }
+          //text가 잡혔을때 우회하기
+          if(event.target.tagName == "P"){
+                var par = event.target.parentNode.parentNode;
+                
+            if(par.classList == "optbox1"){
+                var child = par.querySelectorAll(".opt");
+                for(var i = 0; i < child.length;i++){
+                    if(child[i].classList == event.target.parentNode.classList){
+                        child[i].classList.add("active");
+                    } else{
+                        child[i].classList.remove("active");
+                    }
+                }
+            }
+            if(par.classList == "optbox2"){
+                var child = par.querySelectorAll(".opt");
+                for(var i = 0; i < child.length;i++){
+                    if(child[i].classList == event.target.parentNode.classList){
+                        child[i].classList.add("active");
+                    } else{
+                        child[i].classList.remove("active");
+                    }
+                }
+            }
+            if(par.classList == "optbox3"){
+                var child = par.querySelectorAll(".opt");
+                for(var i = 0; i < child.length;i++){
+                    if(child[i].classList == event.target.parentNode.classList){
+                        child[i].classList.add("active");
+                    } else{
+                        child[i].classList.remove("active");
+                    }
+                }
+            }
+            if(par.classList == "optbox4"){
+                var child = par.querySelectorAll(".opt");
+                for(var i = 0; i < child.length;i++){
+                    if(child[i].classList == event.target.parentNode.classList){
+                        child[i].classList.add("active");
+                    } else{
+                        child[i].classList.remove("active");
+                    }
+                }
+            }
+            };
+        });
+        
+      
+    </script>
+    <script src="/status/top_button.js"></script>
+    
+</body>
+</html>

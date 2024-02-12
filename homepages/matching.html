@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0
+        }
+        body{
+            background-color: rgb(247, 243, 245);
+        }
+
+        #body {
+            width: 420px;
+            height: 100%;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
+        .top{
+            box-shadow: 0 4px 8px rgb(0,0,0,0.15);
+            border-radius: 10px;
+            margin: 24px 24px;
+            background-color: #ffb3c6;
+
+            text-align: center;  
+            padding: 10px 20px;  
+        }
+        .mid{
+            box-shadow: 0 4px 8px rgb(0,0,0,0.15);
+            border-radius: 10px;
+            margin: 24px 24px;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .mid img{
+            
+        }
+        .mid h3{
+            margin-top: 20px;
+        }
+        .mid button{
+            border: none;
+            border-radius: 30px;
+            font-size: 15px;
+            padding: 10px 50px;
+            background-color: #fb6f92;
+            color: white;
+
+            margin: 20px 0 20px 0;
+        }
+        .checkbox1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        /* 여기서 부터는 하단에 있는 토글 */
+        .secretbox {
+            height: 191px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .toggle_box2 {
+
+            color: white;
+            font-size: 15px;
+            background-color: #FED7D7;
+            padding: 5px 15px;
+            border-radius: 20px;
+            text-align: left;
+            width: 80%;
+            height: 25px;
+            margin: 15px;
+
+
+
+        }
+
+        .switch1,
+        .switch2,
+        .switch3 {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            vertical-align: middle;
+            background-color: white;
+            border-radius: 50px;
+
+            margin: 3px;
+            bottom: 2px;
+        }
+
+        .switch1 input {
+            display: none;
+        }
+
+        .switch2 input {
+            display: none;
+        }
+
+        .switch3 input {
+            display: none;
+        }
+
+        .slide_round1,
+        .slide_round2,
+        .slide_round3 {
+
+            cursor: pointer;
+            background-color: black;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            -webkit-transform: .4s;
+            transform: .4s;
+            border-radius: 18px;
+
+        }
+
+        .slide_round1::before,
+        .slide_round2::before,
+        .slide_round3::before {
+            content: "";
+            position: absolute;
+            height: 16px;
+            width: 16px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 50%;
+
+
+        }
+
+        input:checked+.slide_round1,
+        input:checked+.slide_round2,
+        input:checked+.slide_round3 {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slide_round1,
+        input:focus+.slide_round2,
+        input:focus+.slide_round3 {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        .switch1 input:checked~.slide_round1::before,
+        .switch2 input:checked~.slide_round2::before,
+        .switch3 input:checked~.slide_round3::before {
+            -webkit-transform: translateX(1px);
+            -ms-transform: translateX(18px);
+            transform: translateX(18px);
+        }
+
+        .slide_round3,
+        .slide_round2,
+        .slide_round1 {
+            border-radius: 50px;
+        }
+
+        .slide_round3::before,
+        .slide_round2::before .slide_round1::before {
+
+            border-radius: 50%;
+        }
+
+        .on1,
+        .on2,
+        .on3 {
+            margin: 0px;
+            display: inl ine-block;
+            font-size: 15px;
+
+            height: 25px;
+            vertical-align: baseline;
+            line-height: 25px;
+
+        }
+
+        .switch1 .slide_round1::before,
+        .switch2 .slide_round2::before,
+        .switch3 .slide_round3::before {
+            content: "";
+            position: absolute;
+            height: 18px;
+            width: 18px;
+            left: 2px;
+            top: 1px;
+
+            background-color: black;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 50%;
+        }
+    </style>
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+    <div id="body">
+        <header>
+            <div class="header-top">
+                <img class="icon" src="img/macicon.png">
+                <p class="iconText">taehunpick</p>
+                <img class="ins-icon" src="img/ins-icon.jpeg" alt="">
+            </div>
+
+            <div id="btns">
+                <a href="home.html"><button type="button">홈</button></a>
+                <a href="matching.html"><button type="button">매칭</button></a>
+                <a href="meeting.html"><button type="button">소모임</button></a>
+                <a href="mypage.html"><button type="button">내정보</button></a>
+            </div>
+        </header>
+
+
+        <section class="sections">
+
+            <!-- 탑 영역 -->
+            <div class="top">
+                <p>설렘매칭</p>
+            </div>
+
+            <!-- 미드 영역 -->
+            <div class="mid">
+                    <img style="width: 330px; background-color: white;" src="img/messgeAnimation.gif" alt="">
+                    <h3>새로운 인연이 도착했어요</h3>
+                    <a href="cardopen.html"><button type="button">매칭</button></a>
+            </div>
+
+
+
+
+
+
+
+            <!-- 제일 바텀 영역 -->
+            <div class="checkbox1">
+                <div class="machine1">매칭 활성화</div>
+                <div class="secretbox">
+                    <div class="toggle_box2"> 소개팅매칭활성화:
+                        <label class="switch1">
+                            <input type="checkbox" id="check1">
+                            <span class="slide_round1"></span>
+
+                        </label>
+                        <p1 class="on1">OFF</p1>
+                        <p1 class="on1" style="display: none;">ON</p1>
+                    </div>
+
+                    <div class="toggle_box2">
+                        같은 학교(직장) 제외:<label class="switch2">
+                            <input type="checkbox" id="check2">
+                            <span class="slide_round2"></span>
+                        </label>
+                        <p2 class="on2">OFF</p2>
+                        <p2 class="on2" style="display: none;">ON</p2>
+                    </div>
+
+
+                    <div class="toggle_box2">
+                        아는사람 제외:<label class="switch3">
+                            <input type="checkbox" id="check3">
+                            <span class="slide_round3"></span>
+                        </label>
+                        <p3 class="on3">OFF</p3>
+                        <p3 class="on3" style="display: none;">ON</p3>
+                    </div>
+                </div>
+        </section>
+
+
+        </section>
+    </div>
+
+
+    <script>
+        var date1 = document.querySelector(".date1");
+
+        var check = document.getElementById("check1");
+        var check2 = document.getElementById("check2");
+        var check3 = document.getElementById("check3");
+
+        date1.onload = function () {
+            showtime();
+        };
+        function showtime() {
+            var date = new Date();
+            var y = date.getFullYear();
+            var month = date.getMonth();
+            var da = date.getDay();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            var time = "(" + y + "년" + month + "월" + da + "일" + h + "시" + m + "분" + s + "초" + ")";
+
+            date1.innerHTML = time;
+            date1.textContent = time;
+            date1.style.fontSize = "10px";
+        }
+        showtime();
+        check.onclick = function () {
+            $("p1").toggle();
+        }
+
+        check2.onclick = function () {
+            $("p2").toggle();
+        }
+
+        check3.onclick = function () {
+            $("p3").toggle();
+        }
+
+    </script>
+</body>
+
+</html>

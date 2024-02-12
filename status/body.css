@@ -1,0 +1,16 @@
+
+
+body{
+    background-color: rgb(247, 243, 245);
+    font-family: "Noto Sans KR", sans-serif;
+}
+#body{
+    margin: 0 auto;
+    width: 420px;
+    box-shadow: 3px 3px 15px 3px rgb(0,0,0,0.3);
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 30px 15px 30px 15px;
+}

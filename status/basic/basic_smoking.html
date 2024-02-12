@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>군필 여부 확인</title>
+    <link rel="stylesheet" href="/prostatusject/body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            width: 400px;
+            margin: 0 auto;
+            font-family: "Noto Sans KR";
+            position: relative;
+            text-align: center;
+            
+        }
+        .xbtn {
+            position: relative;
+        }
+
+        #btn11 {
+            position: absolute;
+            top: -15px;
+            left: 0;
+            border: none;
+            font-size: 25px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        #btn22 {
+            position: absolute;
+            top: -15px;
+            right: 0;
+            border: none;
+            font-size: 20px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .btmbanner {
+            width: 390px;
+        }
+
+        .botnext {
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+            border-radius: 30px;
+            margin-top: 20px;
+            color: antiquewhite;
+            border: none;
+            background-color: #fb6f92;
+            cursor: pointer;
+        }
+        .military_tap {
+            margin-top: 20px;
+        }
+
+        #dontmilitaryContainer button {
+            width: 150px;
+            height: 150px;
+            margin: 15px 10px;
+            border: 2px solid transparent;
+            border-radius: 30px;
+            box-shadow: 3px 3px 15px 3px rgb(0,0,0,0.3);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="xbtn">
+        <button type="button" id="btn11">< </button>
+        <button type="button" id="btn22">X</button>
+      </div>
+    <body id="body" style="border: none;">
+    
+        <div class="military_tap">
+            <h3>흡연 여부</h3>
+        </div>
+
+        <div class="military_select">
+            <label for="militaryCheckbox">흡연 여부를 알려주세요</label>
+        </div>
+        
+        <div id="dontmilitaryContainer">
+            
+                <div style="height: 60px;">
+        
+                </div>
+                <div class="box">
+                    <button type="button">
+                        비흡연</button>
+                    <button type="button">
+                        흡연</button>
+                </div>
+            
+        </div>
+
+        <div class="btmbanner">
+            <button class="botnext"> 수정하기 </button>
+        </div>
+        <script>
+            var box = document.querySelector(".box");
+            
+            var button = null;
+            
+            box.onclick=function(e){
+                
+                if(button !== null){
+                    
+                    button.style.borderColor="";
+                
+                }
+    
+                e.target.style.borderColor="#ff8fab";
+    
+                button = e.target;
+            }
+        </script>
+        <script src="/status/top_button.js"></script>
+    </body>
+
+</body>
+</html>

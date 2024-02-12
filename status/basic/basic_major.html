@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(240, 203, 221);>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전공 선택 페이지</title>
+    <link rel="stylesheet" href="/status/body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {width: 400px; margin: 0 ; font-family: "Noto Sans KR", sans-serif; position: relative; text-align: center;}
+        
+        .job_select {margin: 0 0 20px ;}
+        .job_description {margin-top: 20px; display: none;}
+        #career_choice {
+            margin-top: 20px;
+            position: relative;
+            cursor: pointer;
+            background-color: pink;
+            border: 1px solid pink;
+            color: black;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .xbtn {
+            position: relative;
+        }
+
+        #btn11 {
+            position: absolute;
+            top: -15px;
+            left: 0;
+            border: none;
+            font-size: 25px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        #btn22 {
+            position: absolute;
+            top: -15px;
+            right: 0;
+            border: none;
+            font-size: 20px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        .btmbanner {
+            width: 390px;
+        }
+
+        .botnext {
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+            border-radius: 30px;
+            margin-top: 20px;
+            color: antiquewhite;
+            border: none;
+            background-color: #fb6f92;
+            cursor: pointer;
+        }
+        h2 {color: pink;}
+        p {line-height: 1.5;}
+    </style>
+</head>
+<body>
+    <div class="xbtn">
+        <button type="button" id="btn11">< </button>
+        <button type="button" id="btn22">X</button>
+      </div>
+    <body id="body" style="border: none;">
+        <div class="career_tap">
+            <h3>전공 선택</h3>
+        </div>
+
+        <div class="job_select">
+            <label for="jobSelection">전공을 알려주세요</label>
+        </div>
+            
+        <div>
+            <select id="jobSelection">
+                <option value="choice">선택</option>
+                <option value="machine">공대</option>
+                <option value="business">경영학과</option>
+                <!-- 다른 전공들 추가 -->
+            </select>
+        </div>
+
+        <div class="btmbanner">
+            <button class="botnext"> 수정하기 </button>
+        </div>
+        <script src="/status/top_button.js"></script>
+    </body>
+</body>
+
+</html>

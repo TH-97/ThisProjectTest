@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- header css적용 -->
+
+    <style>
+        *{text-decoration: none;}
+        body {
+            background-color: rgb(247, 243, 245);
+        }
+
+        .matching {
+            box-shadow: 0 4px 8px rgb(0, 0, 0, 0.15);
+            border-radius: 10px;
+            text-align: center;
+            margin: 24px 24px;
+            padding: 15px 20px;
+            font-family: "Noto Sans KR", sans-serif;
+            background-color: #ffe5ec;
+
+        }
+
+        .matching img {
+            width: 100px;
+            margin: 50px 0 50px 0;
+            /* transform: perspective(600px) rotateY(360deg);
+            backface-visibility: hidden;
+            transition: transform .5s linear 0s; */
+            animation: rotate-axis 5s linear infinite;
+
+        }
+
+        .matching .mat-text {
+            border: 1px solid #000;
+            width: 50px;
+            margin: 0 auto;
+            padding: 3px 10px;
+            border-radius: 40px;
+            font-size: 15px;
+
+        }
+
+        .matching button {
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 20px 50px;
+            border-radius: 40px;
+            border: none;
+            background-color: #fb6f92;
+            color: white;
+            cursor: pointer;
+        }
+        
+        
+
+        @keyframes rotate-axis {
+            from {
+                transform: perspective(800px) rotateY(0deg) rotate(27deg);
+            }
+
+            to {
+                transform: perspective(800px) rotateY(360deg) rotate(27deg);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+    <div id="body">
+        <header>
+            <div class="header-top">
+                <img class="icon" src="img/macicon.png">
+                <p class="iconText">taehunpick</p>
+                <img class="ins-icon" src="img/ins-icon.jpeg" alt="">
+            </div>
+
+            <div id="btns">
+                <a href="home.html"><button type="button">홈</button></a>
+                <a href="matching.html"><button type="button">매칭</button></a>
+                <a href="meeting.html"><button type="button">소모임</button></a>
+                <a href="mypage.html"><button type="button">내정보</button></a>
+            </div>
+        </header>
+
+
+
+        <section>
+            <div class="matching">
+                <div class="mat-text" >
+                    <p style="margin: 0;">소개팅</p>
+                </div>
+                <div><img src="img/heartcard.jpeg" alt=""></div>
+                <div>
+                    <p style="font-size: 12px; margin-top: 7px;">매칭이 비활성화 되어있어요 <br> 매칭을 활성하하고 이상형의 카드를 받아볼까요</p>
+                </div>
+                <div><a href="/homepages/matching.html"><button type="button" onclick="matching();">매칭 활성화 하기</button></a></div>
+            </div>
+
+
+            <style>
+                .mission {
+                    padding: 15px 20px;
+                    font-family: "Noto Sans KR", sans-serif;
+                }
+
+                .mission h1 {
+                    font-size: 17px;
+                }
+
+                .mission .mis-box {
+                    padding: 10px 10px;
+                    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.15);
+                    border-radius: 10px;
+                    /* overflow: hidden; */
+                    display: flex;
+                }
+
+                .mission .mis-box .mis-box-left {
+                    /* float: left; */
+
+                }
+
+                .mission .mis-box .mis-box-left2 {
+                    /* float: left; */
+                    font-size: 12px;
+                    margin-left: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: black;
+                }
+
+                .mission .mis-box .mis-box-right {
+                    float: right;
+                }
+            </style>
+
+            <div class="mission">
+                <h1>신규 가입자 미션 ></h1>
+                <p style="font-size: 12px; color: #777; margin-bottom: 5px;">미션을 완료해보세요</p>
+                <div>
+                    <a href="introduce.html">
+                        <div class="mis-box">
+                            <div class="mis-box-left"><img style="width: 50px; height: 50px;" src="img/icon-pen.png"></div>
+                            <div class="mis-box-left2">필수미션 <br> 자기소개 쓰기</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <style>
+                .review {
+                    padding: 15px 20px;
+                    font-family: "Noto Sans KR", sans-serif;
+                }
+
+                .review .reviewpage {
+                    font-size: 17px;
+                }
+
+                .re-box-top {
+                    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.15);
+                    border-radius: 10px;
+                    padding: 10px 10px;
+                }
+
+                .review .re-box {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .review .re-box .re-box-left2 {
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+
+                .review .re-box .re-box-right {
+                    font-size: 12px;
+                    margin-left: 190px;
+                }
+
+                .review .re-box-top .re-text {
+                    margin-top: 10px;
+                }
+
+                .re-box-left {
+                    background-color: white;
+                }
+            </style>
+
+            <div class="review">
+                <a href="review.html">
+                    <h1 class="reviewpage">나도 할 수 있다! 훈픽 연애 성공 후기 ></h1>
+                </a>
+                <p style="font-size: 12px; color: #777; margin-bottom: 5px;">연픽을 통해 연래를 시작한 유저들의 후기를 모아봐요</p>
+
+                <div class="re-box-top">
+                    <div class="re-box">
+                        <div class="re-box-left"><img style="width: 50px; height: 50px;" src="img/img-animal-cat.png"></div>
+                        <div class="re-box-left2">
+                            <img style="width: 10px; height: 10px;" src="img/icon-star.png">
+                            <img style="width: 10px; height: 10px;" src="img/icon-star.png">
+                            <img style="width: 10px; height: 10px;" src="img/icon-star.png">
+                            <img style="width: 10px; height: 10px;" src="img/icon-star.png">
+                            <img style="width: 10px; height: 10px;" src="img/icon-star.png">
+                            <br> 22학번 여자</div>
+                        <div class="re-box-right">23.11.12</div>
+                    </div>
+                    <div class="re-text">타 앱들은 분명 얼굴을 맞대고 확인이 가능한 장점이 있지만 저는 연픽만의 분위기가 더 좋은 것 같아요
+                        매너있으셨던 분들도 연픽에서 더 많으셨고 연애도 연픽 통해서만 했었네요
+                    </div>
+                </div>
+                <!-- 모달창인데 백에서 만질때에는 값을 넘겨줘야 한다 -->
+                <style>
+                    .modal {
+                        position: absolute;
+                        display: none;
+                        justify-content: center;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 151%;
+                        background-color: rgba(0, 0, 0, 0.6);
+                    
+                    }
+                    .modal_body {
+                        position: absolute;
+                        top: 70%;
+                        /* 모달을 화면가운데 놓기위함.  */
+                        width: 400px;
+                        /* //모달의 가로크기  */
+                        height: 200px;
+                        /* //모달의 세로크기  */
+                        background-color: rgb(255, 255, 255);
+                        /* 모달창 배경색 흰색 */
+                        border-radius: 10px;
+                        /* 테두리  */
+                        /* box-shadow: 0 2px 3px 0 rgb(34, 36, 38, 0.15); */
+                        /* 테두리 그림자  */
+                        transform: translateY(-50%);
+                        /* 모듈창열었을때 위치설정 가운데로  */
+                        background-color: rgba(0, 0, 0, 0);
+                    }
+                    .button1{
+                            width: 60px;
+                            height: 60px;
+                            margin-top: 50px;
+                            border: none;
+                            border-radius: 30px;
+                            margin: 20px auto;
+                            background-color: black;
+                            color: white;
+                            text-align: center;
+                            font-size: 50px;
+                            
+                    }
+                    .modal .modal_body .re-box-top{
+                        background-color: white;
+                    }
+                    
+                </style>
+                <div class="modal">
+                    <div class="modal_body">
+                        <div class="re-box-top">
+                            <div class="re-box">
+                                <div class="re-box-left"><img style="width: 50px; height: 50px;" src="img/img-animal-cat.png">
+                                </div>
+                                <div class="re-box-left2">
+                                    <img style="width: 10px; height: 10px;" src="img/icon-star.png">
+                                    <img style="width: 10px; height: 10px;" src="img/icon-star.png">
+                                    <img style="width: 10px; height: 10px;" src="img/icon-star.png">
+                                    <img style="width: 10px; height: 10px;" src="img/icon-star.png">
+                                    <img style="width: 10px; height: 10px;" src="img/icon-star.png">
+                                    <br> 22학번 여자</div>
+                                <div class="re-box-right">23.11.12</div>
+                            </div>
+                            <div class="re-text">타 앱들은 분명 얼굴을 맞대고 확인이 가능한 장점이 있지만 저는 연픽만의 분위기가 더 좋은 것 같아요
+                                매너있으셨던 분들도 연픽에서 더 많으셨고 연애도 연픽 통해서만 했었네요
+                            </div>
+
+                            
+                        </div>
+                        <div class="button1"></div>
+                    </div>
+                </div>
+            
+                <script>
+                    const modal = document.querySelector('.modal');
+                    const btnOpenModal=document.querySelector('.re-box-top');
+                    var button1 = document.querySelector(".button1");
+            
+                    button1.addEventListener("click", ()=>{
+                       modal.style.display="none"; 
+                    });
+            
+                    btnOpenModal.addEventListener("click", ()=>{
+                        modal.style.display="flex";
+                    });
+                </script>
+
+            </div>
+
+            <style>
+                .complaint {
+                    padding: 15px 20px;
+                    font-family: "Noto Sans KR", sans-serif;
+                }
+
+                .complaint .comp-box {
+                    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.15);
+                    border-radius: 10px;
+                    text-align: center;
+                    background-color: #ffe5ec;
+                    padding: 10px 10px;
+                }
+
+                .complaint .comp-box p {
+                    font-size: 15px;
+                }
+                .complaint .comp-box .text-box{
+                    margin-top: 15px;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .complaint .comp-box .text-box input {
+                    padding: 5px 40px;
+                    font-size: 15px;
+                    border-radius: 10px;
+                }
+                .complaint .comp-box .text-box button{
+                    margin: 0;
+                    padding: 0;
+                    background-color: white;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                }
+                .complaint .comp-box .text-box img{
+                    width: 20px;
+                    background-color: white;
+                    border-radius: 10px;
+                }
+            </style>
+
+            <div class="complaint">
+                <div class="comp-box">
+                    <img style="width: 30px; height: 30px;" src="img/mes.jpeg"><br>
+                    <p>훈픽을 이용해주셔서 진심으로 감사해요</p>
+                    <p>훈픽의 개선 사항이 있다면 연픽 팀에게 알려주세요</p>
+                    <div class="text-box">
+                        <input type="text"> <button type="button"><img src="img/icon-go.png"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+    <script>
+        function matching() {
+            console.log("매칭탭으로 이동")
+        }
+    </script>
+
+</body>
+
+</html>

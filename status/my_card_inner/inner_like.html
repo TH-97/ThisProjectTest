@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="/status/body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- 아이콘 -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+
+    <style>
+        *{margin: 0; padding: 0;}
+        .xbtn {
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        #btn11 {
+            position: absolute;
+            top: -15px;
+            left: 0;
+            border: none;
+            font-size: 25px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        #btn22 {
+            position: absolute;
+            top: -15px;
+            right: 0;
+            border: none;
+            font-size: 20px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .opt{
+            border-radius: 30px;
+            padding: 15px 0px 0px 0px;
+            margin: 15px;
+            width: 100px;
+            height: 80px;
+            text-align: center;
+            display: inline-block;
+            float: left;
+            box-shadow: 3px 3px 15px 3px rgb(0,0,0,0.3);
+            box-sizing: border-box;
+        }
+        .opt.active{
+            border-radius: 30px;
+            padding: 15px 0px 0px 0px;
+            margin: 15px;
+            width: 100px;
+            height: 80px;
+            text-align: center;
+            display: inline-block;
+            float: left;
+            box-shadow: 3px 3px 15px 3px rgb(0,0,0,0.3);
+            box-sizing: border-box;
+            border: 2px solid #000;
+        }
+        
+        .optbox{
+            overflow: hidden;
+        }
+        p{
+            color: #fb6f92;
+            font-weight: 1000;
+        }
+        .btmbanner {
+            width: 390px;
+        }
+
+        .botnext {
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+            border-radius: 30px;
+            margin-top: 20px;
+            color: antiquewhite;
+            border: none;
+            background-color: #fb6f92;
+            cursor: pointer;
+        
+        }
+        div{
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <body id="body">
+        <div class="xbtn">
+            <button type="button" id="btn11"><</button>
+            <button type="button" id="btn22">X</button>
+        </div>
+    
+        <div>
+            <h3>관심사</h3>
+        </div>
+    
+            <div class="optbox">
+                <div class="opt">
+                    <i class="fi fi-rr-car-alt"></i>
+                    <p>자동차</p>
+                </div>
+                <div class="opt">
+                    <i class="fi fi-rr-hand-holding-seeding"></i>
+                    <p>공예</p>
+                </div>
+                <div class="opt">
+                    <i class="fi fi-rr-biking"></i>
+                    <p>스포츠레저</p>
+                </div>
+                <div class="opt">
+                    <i class="fi fi-br-tv-retro"></i>
+                    <p>영화드라마</p>
+                </div>
+                <div class="opt">
+                    <i class="fi fi-rr-martini-glass-citrus"></i>
+                    <p>술</p>
+                </div>
+                <div class="opt">
+                    <i class="fi fi-sr-headphones"></i>
+                    <p>공연전시</p>
+                </div>
+    
+                <div class="opt">
+                    <i class="fi fi-rr-camera"></i>
+                    <p>사진</p>
+                </div>
+                <div class="opt">
+                    <i class="fi fi-bs-music-alt"></i>
+                    <p>음악</p>
+                </div>
+                <div class="opt">
+                    <i class="fi fi-bs-book-alt"></i>
+                    <p>책</p>
+                </div>
+                <div class="opt">
+                    <i class="fi fi-sr-glasses"></i>
+                    <p>패션</p>
+                </div>
+                <div class="opt">
+                    <i class="fi fi-rr-gamepad"></i>
+                    <p>게임</p>
+                </div>
+                <div class="opt">
+                    <i class="fi fi-ss-chart-line-up"></i>
+                    <p>자기개발</p>
+                </div>  
+                <div class="opt">
+                    <i class="fi fi-rr-plane-departure"></i>
+                    <p>여행</p>
+                </div>
+                <div class="opt">
+                    <i class="fi fi-sr-paw"></i>
+                    <p>반려동물</p>
+                </div>
+                <div class="opt">
+                    <i class="fi fi-ss-hat-chef"></i>
+                    <p>요리</p>
+                </div>
+    
+            </div>
+
+            <div class="btmbanner">
+                <button class="botnext"> 수정하기 </button>
+            </div>
+    </body>       
+   
+  
+
+    <script>
+        var optbox = document.querySelectorAll(".opt");
+
+        for(var i = 0; i < optbox.length;i ++){
+            optbox[i].addEventListener("click", function(){
+                // console.log(event.target);
+                // console.log(event.target.classList.contains("opt"));
+                if(event.target.classList.contains("opt")){
+                    event.target.classList.toggle("active");
+                };
+                if(!event.target.classList.contains("opt")){
+                    event.target.parentNode.classList.toggle("active");
+                };
+            });
+        }
+        
+    </script>
+    <script src="/status/top_button.js"></script>
+
+</body>
+</html>

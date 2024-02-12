@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(247, 243, 245);
+        }
+
+        #body {
+            width: 420px;
+            margin: 0 auto;
+            border-radius: 10px;
+            background-color: white;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
+        header {
+            height: 500px;
+        }
+       
+        header .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 20px;
+
+            margin: 5px 24px 10px 24px;
+        }
+
+        header .top .backpage{
+            width: 30px;
+        }
+
+
+        header .mid {
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            box-shadow: 0 4px 8px rgb(0,0,0,0.15);
+            border-radius: 10px;
+            margin: 5px 24px 10px 24px;
+        }
+
+        header .mid .mid-ch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header .mid .mid-ch .hid {
+            height: 1.4rem;
+        }
+
+        header .mid .mid-ch img {
+            width: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="body">
+        <header>
+            <div class="top">
+                <img class="backpage" src="img/icon-back.png" alt="">
+                        <p style="text-align: center;">리뷰</p>
+                        <img width="30px" src="img/writing.png">
+            </div>
+
+            <div class="mid">
+                <div class="mid-ch">
+                    <img src="img/ic-paper.svg">
+                    <div class="hid"></div>
+                    전체리뷰
+                    <div class="hid"></div>
+                    <p>1712개</p>
+                </div>
+
+                <div class="mid-ch">
+                    <img src="img/ic-heart.svg">
+                    <div class="hid"></div>
+                    연애성공리뷰
+                    <div class="hid"></div>
+                    <p>123개</p>
+                </div>
+
+                <div class="mid-ch">
+                    <img src="img/ic-star.svg">
+                    <div class="hid"></div>
+                    평점
+                    <div class="hid"></div>
+                    <p>4.5점</p>
+                </div>
+            </div>
+
+
+            <style>
+                header .bot-scroll {
+                    height: 250px;
+                    overflow-x: scroll;
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+
+                }
+
+                header .bot {
+                    margin: 24px 24px;
+                    box-shadow: 0 4px 8px rgb(0,0,0,0.15);
+                    border-radius: 10px;
+                    padding: 10px 10px;
+                    display: block;
+                }
+
+                header .bot .bot-box {
+                    width: 300px;
+                }
+                header .bot .bot-text {
+                    width: 100%;
+                }
+            </style>
+            <p style="margin: 24px 24px 0px 24px;">베스트 리뷰</p>
+            <div class="bot-scroll">
+                <div class="bot">
+                    <div class="bot-box">
+                        <div class="bot-box-left2">별점 5점 <br> 22학번 여자</div>
+                        <div class="bot-box-right">23.11.12</div>
+                        <div class="bot-text">타 앱들은 분명 얼굴을 맞대고 확인이 가능한 장점이 있지만 저는 연픽만의 분위기가 더 좋은 것 같아요
+                            매너있으셨던 분들도 연픽에서 더 많으셨고 연애도 연픽 통해서만 했었네요
+                        </div>
+                    </div>
+                </div>
+                <div class="bot">
+                    <div class="bot-box">
+                        <div class="bot-box-left2">별점 5점 <br> 22학번 여자</div>
+                        <div class="bot-box-right">23.11.12</div>
+                        <div class="bot-text">타 앱들은 분명 얼굴을 맞대고 확인이 가능한 장점이 있지만 저는 연픽만의 분위기가 더 좋은 것 같아요
+                            매너있으셨던 분들도 연픽에서 더 많으셨고 연애도 연픽 통해서만 했었네요
+                        </div>
+                    </div>
+                </div>
+                <div class="bot">
+                    <div class="bot-box">
+                        <div class="bot-box-left2">별점 5점 <br> 22학번 여자</div>
+                        <div class="bot-box-right">23.11.12</div>
+                        <div class="bot-text">타 앱들은 분명 얼굴을 맞대고 확인이 가능한 장점이 있지만 저는 연픽만의 분위기가 더 좋은 것 같아요
+                            매너있으셨던 분들도 연픽에서 더 많으셨고 연애도 연픽 통해서만 했었네요
+                        </div>
+                    </div>
+                </div>
+                <div class="bot">
+                    <div class="bot-box">
+                        <div class="bot-box-left2">별점 5점 <br> 22학번 여자</div>
+                        <div class="bot-box-right">23.11.12</div>
+                        <div class="bot-text">타 앱들은 분명 얼굴을 맞대고 확인이 가능한 장점이 있지만 저는 연픽만의 분위기가 더 좋은 것 같아요
+                            매너있으셨던 분들도 연픽에서 더 많으셨고 연애도 연픽 통해서만 했었네요
+                        </div>
+                    </div>
+                </div>
+                <div class="bot">
+                    <div class="bot-box">
+                        <div class="bot-box-left2">별점 5점 <br> 22학번 여자</div>
+                        <div class="bot-box-right">23.11.12</div>
+                        <div class="bot-text">타 앱들은 분명 얼굴을 맞대고 확인이 가능한 장점이 있지만 저는 연픽만의 분위기가 더 좋은 것 같아요
+                            매너있으셨던 분들도 연픽에서 더 많으셨고 연애도 연픽 통해서만 했었네요
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <style>
+            .pickselect {
+                display: inline;
+                
+                margin: 10px 0 10px 24px;
+            }
+            .select{
+                -webkit-appearance: none;
+                width: 50px;
+                /* padding: 2px 0 2px 15px; */
+                margin-top: 50px;
+                margin-left: 3px;
+                text-align-last: center;
+                text-align: center;
+            }
+
+            .review {
+                padding: 15px 20px;
+                font-family: "Noto Sans KR", sans-serif;
+            }
+
+            .review h1 {
+                font-size: 18px;
+            }
+
+            .re-box-top {
+                box-shadow: 0 4px 8px rgb(0,0,0,0.15);
+                border-radius: 10px;
+                padding: 10px 10px;
+                margin: 20px 0 0 0;
+            }
+
+            .review .re-box {
+                display: flex;
+                align-items: center;
+            }
+
+            .review .re-box .re-box-left2 {
+                font-size: 12px;
+                margin-left: 10px;
+            }
+
+            .review .re-box .re-box-right {
+                font-size: 12px;
+                margin-left: 190px;
+            }
+
+            .review .re-box-top .re-text {
+                margin-top: 10px;
+            }
+
+            .re-box-left {
+                background-color: white;
+            }
+        </style>
+
+        <section>
+            <div class="pickselect">
+                <select class="select" name="" id="">
+                    <option value="">전체</option>
+                    <option value="소개팅">소개팅</option>
+                    <option value="미팅">미팅</option>
+                    <option value="연애">연애</option>
+                </select>
+                <select class="select" name="" id="">
+                    <option value="">성별</option>
+                    <option value="소개팅">남자</option>
+                    <option value="소개팅">여자</option>
+                </select>
+                <select class="select" name="" id="">
+                    <option value="">학번</option>
+                    <option value="">21학번</option>
+                    <option value="">20학번</option>
+                    <option value="">19학번</option>
+                </select>
+            </div>
+            <div class="review">
+                <div class="re-box-top">
+                    <div class="re-box">
+                        <div class="re-box-left"><img style="width: 50px; height: 40px;" src="img/ani.png"></div>
+                        <div class="re-box-left2">별점 5점 <br> 22학번 여자</div>
+                        <div class="re-box-right">23.11.12</div>
+                    </div>
+                    <div class="re-text">타 앱들은 분명 얼굴을 맞대고 확인이 가능한 장점이 있지만 저는 연픽만의 분위기가 더 좋은 것 같아요
+                        매너있으셨던 분들도 연픽에서 더 많으셨고 연애도 연픽 통해서만 했었네요
+                    </div>
+                </div>
+                <div class="re-box-top">
+                    <div class="re-box">
+                        <div class="re-box-left"><img style="width: 50px; height: 40px;" src="img/ani.png"></div>
+                        <div class="re-box-left2">별점 5점 <br> 22학번 여자</div>
+                        <div class="re-box-right">23.11.12</div>
+                    </div>
+                    <div class="re-text">타 앱들은 분명 얼굴을 맞대고 확인이 가능한 장점이 있지만 저는 연픽만의 분위기가 더 좋은 것 같아요
+                        매너있으셨던 분들도 연픽에서 더 많으셨고 연애도 연픽 통해서만 했었네요
+                    </div>
+                </div>
+                <div class="re-box-top">
+                    <div class="re-box">
+                        <div class="re-box-left"><img style="width: 50px; height: 40px;" src="img/ani.png"></div>
+                        <div class="re-box-left2">별점 5점 <br> 22학번 여자</div>
+                        <div class="re-box-right">23.11.12</div>
+                    </div>
+                    <div class="re-text">타 앱들은 분명 얼굴을 맞대고 확인이 가능한 장점이 있지만 저는 연픽만의 분위기가 더 좋은 것 같아요
+                        매너있으셨던 분들도 연픽에서 더 많으셨고 연애도 연픽 통해서만 했었네요
+                    </div>
+                </div>
+                <div class="re-box-top">
+                    <div class="re-box">
+                        <div class="re-box-left"><img style="width: 50px; height: 40px;" src="img/ani.png"></div>
+                        <div class="re-box-left2">별점 5점 <br> 22학번 여자</div>
+                        <div class="re-box-right">23.11.12</div>
+                    </div>
+                    <div class="re-text">타 앱들은 분명 얼굴을 맞대고 확인이 가능한 장점이 있지만 저는 연픽만의 분위기가 더 좋은 것 같아요
+                        매너있으셨던 분들도 연픽에서 더 많으셨고 연애도 연픽 통해서만 했었네요
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+    <script src="review.js"></script>
+
+</body>
+
+
+</html>

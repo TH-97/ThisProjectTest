@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="/status/body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+                
+        .xbtn {
+            position: relative;
+        }
+
+        #btn11 {
+            position: absolute;
+            top: -15px;
+            left: 0;
+            border: none;
+            font-size: 25px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        #btn22 {
+            position: absolute;
+            top: -15px;
+            right: 0;
+            border: none;
+            font-size: 20px;
+            background-color: transparent; 
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .btmbanner {
+            width: 390px;
+        }
+
+        .botnext {
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+            border-radius: 30px;
+            margin-top: 20px;
+            color: antiquewhite;
+            border: none;
+            background-color: #fb6f92;
+            cursor: pointer;
+        }
+
+        #body{
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
+        .box{
+            text-align: center;
+        }
+        
+        .box div{
+            display: inline-block;
+        }
+        
+        .box > div button{
+            margin: 15px 10px;
+            width: 150px;
+            height: 150px;
+            border-radius: 30px;
+            box-shadow: 3px 3px 15px 3px rgb(0, 0, 0, 0.3);
+            border: 2px solid transparent;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="xbtn">
+        <button type="button" id="btn11"><</button>
+        <button type="button" id="btn22">X</button>
+    </div>
+    <body id="body" style="overflow:auto">
+        <div>
+            <header>
+                <h3>나만의 포인트를 알려주세요</h3>
+            </header>
+
+            <section class="box">
+                <div>
+                    <div class="box1">
+                        <h3><img src="/status/img/eyes1.png" alt="" width="50"></h3>
+                        <div><button type="button">유쌍</button></div>
+                        <div><button type="button">무쌍</button></div>
+                    </div>
+                    <div class="box2">
+                        <h3><img src="/status/img/Glasses1.png" alt="" width="50"></h3>
+                        <div><button type="button">유</button></div>
+                        <div><button type="button">무</button></div>
+                    </div>
+                    <!-- <div>
+                        <h3><img src="/project/img/dimple1.png" alt="" width="50"></h3>
+                        <div><button type="button">유</button></div>
+                        <div><button type="button">무</button></div>
+                    </div>
+                    <div>
+                        <h3><img src="/project/img/piersing.png" alt="" width="50"></h3>
+                        <div><button type="button">유</button></div>
+                        <div><button type="button">무</button></div>
+                    </div>
+                    <div>
+                        <h3><img src="/project/img/tatoo1.png" alt="" width="50"></h3>
+                        <div><button type="button">유</button></div>
+                        <div><button type="button">무</button></div>
+                    </div> -->
+                </div>    
+
+            </section>
+        </div>
+
+            <div class="btmbanner">
+                <button class="botnext"> 수정하기 </button>
+            </div>
+
+            <script>
+                var box1 = document.querySelector(".box1");
+                var box2 = document.querySelector(".box2");
+
+                var button1 = null;
+                box1.onclick = function(e1){
+                    if(button1 !== null){
+                        button1.style.borderColor="";
+                    }
+                    e1.target.style.borderColor="#ff8fab";
+                    button1 = e1.target;
+                }
+
+                var button2 = null;
+                box2.onclick = function(e2){
+                    if(button2 !== null){
+                        button2.style.borderColor="";
+                    }
+                    e2.target.style.borderColor="#ff8fab";
+                    button2 = e2.target;
+                }
+
+            </script>
+            <script src="/status/top_button.js"></script>
+
+        </div>
+    </body>
+</body>
+</html>

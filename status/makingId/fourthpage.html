@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/status/body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            width: 400px;
+            margin: 0 auto;
+            overflow: auto;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
+        .topbanner {
+            position: fixed;
+            top: 0px;
+            margin-top: 100px;
+        }
+
+        .topblock {
+            height: 130px;
+        }
+
+        .xbtn {
+            position: relative;
+        }
+
+        #btn11 {
+            position: absolute;
+            top: 15px;
+            left: 0;
+            border: none;
+            font-size: 30px;
+            background-color: transparent;
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        #btn22 {
+            position: absolute;
+            top: 15px;
+            right: 0;
+            border: none;
+            font-size: 23px;
+            background-color: transparent;
+            color: #cec7c7;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .center_body {
+            overflow: auto;
+            text-align: center;
+            margin-top: 20px;
+            max-height: 600px;
+        }
+
+        .btmbanner {
+            /* position: fixed; */
+            width: 400px;
+            bottom: 40px;
+            z-index: 999;
+        }
+
+        .botnext {
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+            border-radius: 30px;
+            color: antiquewhite;
+            border: 1px solid #b6b4b4;
+            background-color: #fb6f92;
+            cursor: pointer;
+        }
+
+        .center_body button {
+            border-radius: 30px;
+            border: 2px solid transparent;
+            box-shadow: 3px 3px 15px 3px rgb(0, 0, 0, 0.3);
+        }
+
+        .malebtn {
+            height: 150px;
+            width: 150px;
+            margin: 15px 13px;
+        }
+
+        .femalebtn {
+            height: 150px;
+            width: 150px;
+            margin: 15px 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body id="body">
+
+
+        <div class="xbtn">
+            <button type="button" id="btn11">
+                < </button>
+                    <button type="button" id="btn22">X</button>
+        </div>
+
+        <div class="topbanner">
+
+            설문완료까지 2페이지 남았어요! 4/6
+        </div>
+        <div class="topblock">
+
+        </div>
+        <div class="center_body">
+            <section>
+                <div>
+                    <h2>나이와 직업을 알려주세요</h2>
+                </div>
+                <div style="height: 10px;">
+
+                </div>
+
+                <div style="margin: 20px 0px; font-size: larger;">
+                    나이 : <input type="text" placeholder="24" style="width: 80px; height: 30px;font-size: larger;">
+                </div>
+            </section>
+            <section>
+                <div class="box">
+                    <button type="button" class="malebtn">
+                        대학생</button>
+                    <button type="button" class="femalebtn">
+                        취준생</button>
+                    <button type="button" class="malebtn">
+                        직장인</button>
+                    <button type="button" class="malebtn">
+                        자영업자</button>
+                 </div>
+            </section>
+        </div>
+        <div style="height: 30px;">
+
+        </div>
+
+
+
+        <div class="btmbanner">
+            <a href="fifthpage.html"><button class="botnext"> 다음으로 </button></a>
+        </div>
+
+        <script>
+            var box = document.querySelector(".box");
+            
+            var button = null;
+            
+            box.onclick=function(e){
+                
+                if(button !== null){
+                    
+                    button.style.borderColor="";
+                
+                }
+
+                e.target.style.borderColor="#ff8fab";
+
+                button = e.target;
+            }
+        </script>
+        <script src="/status/top_button.js"></script>
+    </body>
+</body>
+
+</html>
