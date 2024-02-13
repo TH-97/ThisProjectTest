@@ -7,10 +7,11 @@ body{
 #body{
     margin: 0 auto;
     width: 420px;
+    height: 100vh;
     box-shadow: 3px 3px 15px 3px rgb(0,0,0,0.3);
     background-color: white;
     border-radius: 10px;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: scroll;
     padding: 30px 15px 30px 15px;
 }
